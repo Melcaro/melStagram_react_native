@@ -1,21 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import HomePage from './components/HomePage';
+import Header from './Header';
+import StoriesList from './StoriesList';
 
-export default function App() {
+export default function HomePage() {
   return (
     <View style={styles.container}>
-      <HomePage />
+      <Header />
+      <StoriesList />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    ...StyleSheet.absoluteFill,
     flex: 1,
-    backgroundColor: 'black',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
 });
