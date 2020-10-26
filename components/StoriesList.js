@@ -36,23 +36,22 @@ export default function StoriesList() {
 const styles = StyleSheet.create({
   container: {
     flex: 2,
+    marginVertical: 5,
   },
   storiesList: {
     borderColor: 'orange',
     borderWidth: 1,
+    paddingLeft:10,
   },
   storyContainer: {
-    borderColor: 'blue',
-    borderWidth: 1,
     justifyContent: 'flex-start',
+    alignItems:'center',
     flex: 1,
     height: 100,
     marginHorizontal: 10,
   },
   name: {
     color: 'white',
-    borderColor: 'yellow',
-    borderWidth: 1,
   },
   image: {
     width: screenWidth * 0.15,

@@ -3,12 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Header from './Header';
 import StoriesList from './StoriesList';
+import TimeLine from './TimeLine';
 
 export default function HomePage() {
   return (
     <View style={styles.container}>
       <Header />
       <StoriesList />
+      <TimeLine />
     </View>
   );
 }
