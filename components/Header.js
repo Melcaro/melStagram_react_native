@@ -21,15 +21,13 @@ export default function Header() {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
     width: screenWidth,
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     marginTop: 30,
+    marginBottom:10,
     padding: 2,
-    borderColor: 'red',
-    borderWidth: 1,
   },
   titleContainer: {
     width: '40%',

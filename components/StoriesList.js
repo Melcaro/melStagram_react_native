@@ -39,9 +39,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   storiesList: {
-    borderColor: 'orange',
-    borderWidth: 1,
-    paddingLeft:10,
+    paddingLeft:4,
   },
   storyContainer: {
     justifyContent: 'flex-start',
