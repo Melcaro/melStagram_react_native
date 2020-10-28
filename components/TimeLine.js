@@ -9,13 +9,14 @@ import {
 } from 'react-native';
 
 import fatChoco from '../assets/fatChoco.jpg';
+import beach from '../assets/beach.webp';
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get('window');
 
 const postsList = new Array(50).fill({
   userName: 'Mel',
   profilePic: fatChoco,
-  imagePost: '',
+  imagePost: beach,
   legend: "LET'S GO TO THE BEAAACH!!",
 });
 
@@ -35,7 +36,7 @@ export default function TimeLine() {
       <FlatList
         data={postsList}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item,i) => i+''}
       />
     </View>
   );

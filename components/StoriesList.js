@@ -25,7 +25,7 @@ export default function StoriesList() {
       <FlatList
         data={stories}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item,i) => i+''}
         style={styles.storiesList}
         horizontal
       ></FlatList>
